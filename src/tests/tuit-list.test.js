@@ -3,6 +3,8 @@ import {screen, render} from "@testing-library/react";
 import {HashRouter} from "react-router-dom";
 import {findAllTuits} from "../services/tuits-service";
 import axios from "axios";
+import 'regenerator-runtime/runtime'
+import '@testing-library/jest-dom/extend-expect';
 
 jest.mock('axios');
 
@@ -15,12 +17,10 @@ const MOCKED_TUITS = [
 ];
 
 test('tuit list renders static tuit array', () => {
-  // TODO: implement this
+  
 });
 
-test('tuit list renders async', async () => {
-  // TODO: implement this
-})
+
 
 test('tuit list renders mocked', async () => {
   // TODO: implement this
