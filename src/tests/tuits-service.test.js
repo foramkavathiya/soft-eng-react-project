@@ -141,7 +141,7 @@ describe('findTuitById', () => {
     const status = await findTuitById(tuitt._id);
 
     // verify inserted tuit's properties match parameter tuit
-    expect(tuitt.tuit).toEqual(tuit.tuit);
+    expect(status.tuit).toEqual(tuit.tuit);
 });
 });
 
