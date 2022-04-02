@@ -33,3 +33,6 @@ export const updateTuit = (tid, tuit) =>
 export const deleteTuit = (tid) =>
     api.delete(`${TUITS_API}/${tid}`)
         .then(response => response.data);
+
+export const deleteTuitByUserId = (uid) =>
+    api.get(`${TUITS_API}/${uid}/delete`)
